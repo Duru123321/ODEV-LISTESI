@@ -3,14 +3,14 @@ import java.util.HashMap;
 import java.util.Map;
 public class Odevalti {
     public static void main(String[] args) {
-        Integer[] studentScores = {100,90,120};
-        Integer[] productPrices = {20,30,10};
-        Integer[] temperatures = {80,63,108};
+        Integer[] firstprices = {100,90,120};
+        Integer[] beforelastprices = {20,30,10};
+        Integer[] lastprices = {80,63,108};
 
         Map<String, Integer[]> arrays = new HashMap<>();
-        arrays.put("Başlangıç Fiyatları", studentScores);
-        arrays.put("İndirim Yüzdeleri", productPrices);
-        arrays.put("Son Fiyatlar", temperatures);
+        arrays.put("Başlangıç Fiyatları", firstprices);
+        arrays.put("İndirim Yüzdeleri", beforelastprices);
+        arrays.put("Son Fiyatlar", lastprices);
 
         System.out.println("fiyatlandırma aşamaları");
         for (Map.Entry<String, Integer[]> entry : arrays.entrySet()) {
